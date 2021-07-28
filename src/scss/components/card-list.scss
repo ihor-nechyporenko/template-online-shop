@@ -1,0 +1,44 @@
+.container__flex {
+  display: flex;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px -7px;
+}
+
+.card-container {
+  margin: 10px 7px;
+  width: 250px;
+  height: 380px;
+  background-color: $bgc-card;
+}
+
+.card-image {
+  padding: 20px;
+  width: 210px;
+  height: 210px;
+}
+
+.card-desc {
+  margin-bottom: 55px;
+  padding: 0 20px;
+
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: $text-color-primary;
+}
+
+.price {
+  margin-bottom: 14px;
+  padding: 0 20px;
+
+  font-family: $font-primary;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: $text-color-third;
+}

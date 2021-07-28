@@ -1,0 +1,11 @@
+<ul>
+{{#each this}}
+    <li class="sidebar__item">{{catalogue}}
+        <ul class="subcatalogue">
+        {{#each subcatalogue}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+    </li>
+{{/each}}
+</ul>

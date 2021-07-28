@@ -1,0 +1,19 @@
+.sidebar {
+  margin-right: 22px;
+}
+
+.sidebar__item {
+  font-family: $font-primary;
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: $text-color-primary;
+}
+
+.subcatalogue {
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 1.57;
+  list-style: disc;
+}

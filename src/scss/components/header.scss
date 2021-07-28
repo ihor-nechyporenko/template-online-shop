@@ -1,0 +1,52 @@
+header {
+  background-image: url('/images/header-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 65px 0;
+  width: 273px;
+  height: 100px;
+}
+
+.contacts__thumb {
+  text-align: end;
+}
+
+.contacts__list {
+  margin-top: 45px;
+}
+
+.contacts {
+  font-family: $font-secondary;
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+
+  text-decoration: none;
+  color: $text-color-primary;
+}
+
+.feedback__btn {
+  padding: 0;
+
+  font-family: $font-primary;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: $text-color-primary;
+
+  border: none;
+  border-bottom: dashed;
+  background-color: inherit;
+
+  cursor: pointer;
+}

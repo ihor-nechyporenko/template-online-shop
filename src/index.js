@@ -7,7 +7,7 @@ import cardItemsTpl from './tamplates/card-item.hbs';
 
 
 const renderSidebar = sidebarTpl(sidebar);
-refs.sidebar.insertAdjacentHTML('beforeend', renderSidebar);
+refs.sidebar.insertAdjacentHTML('afterbegin', renderSidebar);
 
 const renderCardList = cardItemsTpl(items);
 refs.cardList.insertAdjacentHTML('beforeend', renderCardList);

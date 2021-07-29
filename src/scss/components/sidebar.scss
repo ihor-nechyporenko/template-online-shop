@@ -1,5 +1,14 @@
+.sidebar-list {
+  width: 180px;
+}
+
 .sidebar {
   margin-right: 22px;
+  width: 180px;
+}
+
+.sidebar > a {
+  text-decoration: none;
 }
 
 .sidebar__item {
@@ -16,4 +25,20 @@
   font-size: 14px;
   line-height: 1.57;
   list-style: disc;
+}
+
+.price-list-thumb {
+  text-align: center;
+}
+
+.price-list-thumb > img {
+  margin: 110px auto 0 auto;
+}
+
+.price-list {
+  font-family: $font-primary;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: $text-color-third;
 }

@@ -5,4 +5,6 @@ export default {
   feedbackBtn: document.querySelector('.feedback__btn'),
   backdrop: document.querySelector('.modal__overlay'),
   modalCloseBtn: document.querySelector('.modal__button'),
+  sliderLeftBtn: document.querySelector('.left-btn'),
+  sliderRightBtn: document.querySelector('.right-btn'),
 };

@@ -31,7 +31,7 @@
           <nav>
             <ul class="menu__list">
               <li>
-                <a href="#" class="menu__link">Главная</a>
+                <a href="/" class="menu__link">Главная</a>
               </li>
               <li>
                 <a href="#" class="menu__link">Каталог</a>
@@ -49,6 +49,18 @@
           </nav>
         </div>
       </section>
+
+      <section class="slider__section">
+        <div class="slider-thumb">
+          <div class="slider">
+              <img src="images/slide-1.png" class="show" alt='Слайд 1' data-slider-img />
+              <img src="images/slide-2.png" alt='Слайд 2' data-slider-img />
+          </div>
+          <button class="left-btn" type="button"></button>
+          <button class="right-btn" type="button"></button>
+        </div>
+      </section>
+
       <section class="catalogue__section">
         <div class="container">
           <nav>
@@ -66,6 +78,7 @@
           </nav>
         </div>
       </section>
+
       <div class="container container__flex">
         <div class="sidebar-container">
           <aside class="sidebar">
@@ -77,9 +90,13 @@
             </a>
           </aside>
         </div>
+
         <section class="cardlist__section"></section>
+
       </div>
+
       <span class="pagination">1 2 <span class="pagination-current">3</span> 4 5 6 7</span>
+
       <section class="about-us">
         <div class="container container__flex container__border">
           <p class="about-us-descr">Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов,
@@ -132,7 +149,7 @@
       </div>
     </footer>
 
-    <div class="modal js-modal">
+    <div class="modal">
       <div class="modal__overlay"></div>
     
       <div class="modal__content">
@@ -161,34 +178,6 @@
         </form>
       </div>
     </div>
-
-    <!-- <div class="backdrop is-hiden" data-modal>
-      <div class="modal">
-      <button type="button" class="modal__button" data-action="close-modal"></button>
-        <div class="modal-container">
-          <h2 class="modal-title">Обратная связь</h2>
-          <form>
-            <label>
-              Ваше имя *
-              <input type="text" name="name" required autocomplete="off"/>
-            </label>
-            <label>
-              Телефон *
-              <input type="tel" name="tel" required autocomplete="off"/>
-            </label>
-            <label>
-              Email *
-              <input type="email" name="email" required autocomplete="off"/>
-            </label>
-            <label>
-              Сообщение
-              <textarea type="text" name="comment" ></textarea>
-            </label>
-            <button type="submit">Отправить</button>
-          </form>
-        </div>
-      </div>
-    </div> -->
 
   </body>
 </html>

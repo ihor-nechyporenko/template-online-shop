@@ -1,0 +1,145 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  overflow: scroll;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-duration) var(--timing-function);
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal__content {
+  padding: 35px 0 26px 0;
+  opacity: 1;
+  position: relative;
+  width: 466px;
+  // height: 578px;
+  background-color: #fff;
+
+  transform: scale(0.9);
+  transition: transform var(--animation-duration) var(--timing-function);
+
+  &-title {
+    margin-bottom: 35px;
+    text-align: center;
+
+    font-family: $font-primary;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $text-color-modal;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 341px;
+    margin: 0 auto;
+  }
+
+  &-label {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+
+    font-family: $font-primary;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $text-color-modal;
+  }
+
+  &-input,
+  &-textarea {
+    margin: 6px 0 20px 0;
+    padding: 14px;
+    height: 42px;
+
+    font-family: $font-primary;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+
+    border: 1px solid #c3c3c3;
+    color: $text-color-modal;
+  }
+
+  &-textarea {
+    resize: none;
+    height: 142px;
+  }
+
+  &-button {
+    height: 42px;
+    width: 128px;
+
+    font-family: $font-primary;
+    font-size: 17.8px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: $text-color-secondary;
+    background-color: $bgc-dark-grey;
+
+    border: none;
+    cursor: pointer;
+  }
+
+  &-button-thumb {
+    text-align: center;
+  }
+}
+
+.modal.is-open .modal__content {
+  transform: scale(1);
+}
+
+.modal__button {
+  position: absolute;
+  top: -27px;
+  right: -27px;
+  padding: 0;
+  margin: 0;
+  width: 27px;
+  height: 27px;
+
+  background-color: $bgc-light-grey;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--animation-duration) var(--timing-function);
+  outline: none;
+
+  background-image: url('../images/icon-close.svg');
+  background-position: center;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  transform: scale(1);
+}
+
+.modal__button:hover,
+.modal__button:focus {
+  transform: scale(1.1);
+}

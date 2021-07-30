@@ -24,6 +24,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="menu__section">
         <div class="container menu__container">
@@ -93,6 +94,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div class="container container__flex container__space-between">
         <div class="footer-copyright">
@@ -129,5 +131,64 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal js-modal">
+      <div class="modal__overlay"></div>
+    
+      <div class="modal__content">
+        <button type="button" class="modal__button" data-action="close-modal"></button>
+        <h2 class="modal__content-title">Обратная связь</h2>
+        <form class="modal__content-form">
+          <label class="modal__content-label">
+            Ваше имя *
+            <input class="modal__content-input" type="text" name="name" required autocomplete="off" />
+          </label>
+          <label class="modal__content-label">
+            Телефон *
+            <input class="modal__content-input" type="tel" name="tel" required autocomplete="off" />
+          </label>
+          <label class="modal__content-label">
+            Email *
+            <input class="modal__content-input" type="email" name="email" required autocomplete="off" />
+          </label>
+          <label class="modal__content-label">
+            Сообщение
+            <textarea class="modal__content-textarea" type="text" name="comment"></textarea>
+          </label>
+          <div class="modal__content-button-thumb">
+            <button class="modal__content-button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- <div class="backdrop is-hiden" data-modal>
+      <div class="modal">
+      <button type="button" class="modal__button" data-action="close-modal"></button>
+        <div class="modal-container">
+          <h2 class="modal-title">Обратная связь</h2>
+          <form>
+            <label>
+              Ваше имя *
+              <input type="text" name="name" required autocomplete="off"/>
+            </label>
+            <label>
+              Телефон *
+              <input type="tel" name="tel" required autocomplete="off"/>
+            </label>
+            <label>
+              Email *
+              <input type="email" name="email" required autocomplete="off"/>
+            </label>
+            <label>
+              Сообщение
+              <textarea type="text" name="comment" ></textarea>
+            </label>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
   </body>
 </html>

@@ -18,13 +18,22 @@
 .menu__link {
   padding: 0 20px;
   font-family: $font-primary;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
   letter-spacing: 0.025em;
 
   color: $text-color-secondary;
   text-decoration: none;
+
+  @media screen and (min-width: 1248px) {
+    font-size: 30px;
+  }
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  text-decoration: underline;
 }
 
 .menu__list > li:not(:last-child) {

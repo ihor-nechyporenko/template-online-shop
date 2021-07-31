@@ -9,16 +9,28 @@
 }
 
 .card-container {
-  width: calc((100% - 6 * 7px) / 3);
+  width: 100%;
   margin: 10px 7px;
   padding-bottom: 14px;
   background-color: $bgc-light-grey;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 7px) / 2);
+  }
+
+  @media screen and (min-width: 1248px) {
+    width: calc((100% - 6 * 7px) / 3);
+  }
 }
 
 .card-image {
-  margin: 20px;
-  width: 210px;
-  height: 210px;
+  padding: 20px;
+  width: 100%;
+
+  @media screen and (min-width: 1248px) {
+    min-width: 210px;
+    min-height: 210px;
+  }
 }
 
 .card-desc {
@@ -46,7 +58,6 @@
   display: block;
   text-align: center;
   margin-top: 32px;
-  padding-left: 202px;
 
   font-family: $font-primary;
   font-size: 14px;
@@ -54,6 +65,10 @@
   font-weight: 400;
   letter-spacing: 0.565em;
   color: $text-color-primary;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 202px;
+  }
 }
 
 .pagination-current {

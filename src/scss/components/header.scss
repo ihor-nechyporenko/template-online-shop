@@ -4,21 +4,36 @@ header {
 
 .header__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .logo {
   margin: 65px 0;
   width: 273px;
   height: 100px;
+
+  @media screen and (max-width: 767px) {
+    align-self: center;
+  }
 }
 
 .contacts__thumb {
-  text-align: end;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: end;
+  }
 }
 
 .contacts__list {
-  margin-top: 45px;
+  @media screen and (min-width: 768px) {
+    margin-top: 45px;
+  }
 }
 
 .contacts {
@@ -46,4 +61,8 @@ header {
   background-color: inherit;
 
   cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 65px;
+  }
 }

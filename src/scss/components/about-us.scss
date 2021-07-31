@@ -1,30 +1,55 @@
 .about-us {
   margin-bottom: 200px;
-  padding-left: 202px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 202px;
+  }
 }
 
 .container__border {
   padding: 30px 0 0 0;
   margin-top: 67px;
-  // width: 980px;
-  width: 778px;
   border-top: 1px solid $text-color-primary;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 546px;
+  }
+
+  @media screen and (min-width: 1248px) {
+    width: 778px;
+  }
 }
 
 .about-us-descr {
-  width: 50%;
   font-family: $font-primary;
   font-size: 14px;
   line-height: 1.57;
   font-weight: 400;
   letter-spacing: 0.025em;
   color: $text-color-primary;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 }
 
 .container > .about-us-descr:not(:last-of-type) {
-  padding-right: 20px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-right: 20px;
+  }
 }
 
 .container > .about-us-descr:not(:first-of-type) {
-  padding-left: 20px;
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+  }
 }

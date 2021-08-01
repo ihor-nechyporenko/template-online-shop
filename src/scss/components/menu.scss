@@ -1,4 +1,45 @@
+.mobile-menu__container {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-toggle-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transform: scale(1);
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-burger {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.icon-burger,
+.icon-cross {
+  fill: $text-color-secondary;
+}
+
 .menu__section {
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -7,16 +48,56 @@
 }
 
 .menu__container {
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border-top: solid #ececec 1px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: $bgc-dark-grey;
+
+    transform: translateX(-100%);
+    transition: all var(--animation-duration) var(--timing-function);
+
+    &.is-open {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
 }
 
 .menu__list {
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    padding: 55px 0;
+  }
+
+  & > li {
+    @media screen and (max-width: 767px) {
+      align-self: center;
+    }
+  }
+
+  & > li:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .menu__link {
-  padding: 0 20px;
   font-family: $font-primary;
   font-size: 18px;
   line-height: 1.2;
@@ -25,6 +106,10 @@
 
   color: $text-color-secondary;
   text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 20px;
+  }
 
   @media screen and (min-width: 1248px) {
     font-size: 30px;
@@ -37,7 +122,9 @@
 }
 
 .menu__list > li:not(:last-child) {
-  border-right: 2px solid $text-color-secondary;
+  @media screen and (min-width: 768px) {
+    border-right: 2px solid $text-color-secondary;
+  }
 }
 
 .menu__list li:last-child > a {

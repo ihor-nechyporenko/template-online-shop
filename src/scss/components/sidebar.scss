@@ -1,8 +1,15 @@
+.container__flex-column {
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
 .sidebar {
-  display: none;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 768px) {
-    display: block;
     margin-right: 22px;
     width: 180px;
   }
@@ -14,26 +21,45 @@
 
 .sidebar__item {
   font-family: $font-primary;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.67;
   font-weight: 400;
   letter-spacing: 0.025em;
   color: $text-color-primary;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .subcatalogue {
   margin-left: 30px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.57;
   list-style: disc;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .price-list-thumb {
+  padding-top: 110px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.price-list-link {
+  display: inline-block;
   text-align: center;
 }
 
-.price-list-thumb > img {
-  margin: 110px auto 0 auto;
+.price-list-link > img {
+  margin: 0 auto;
 }
 
 .price-list {

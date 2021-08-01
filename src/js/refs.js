@@ -7,4 +7,6 @@ export default {
   modalCloseBtn: document.querySelector('.modal__button'),
   sliderLeftBtn: document.querySelector('.left-btn'),
   sliderRightBtn: document.querySelector('.right-btn'),
+  menuBtn: document.querySelector('[data-menu-button]'),
+  mobileMenu: document.querySelector('[data-menu]'),
 };

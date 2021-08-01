@@ -1,14 +1,6 @@
 import './scss/main.scss';
+import './js/render-card-list';
+import './js/render-sidebar';
 import './js/modal';
 import './js/slider';
-import refs from './js/refs';
-import sidebar from './sidebar.json';
-import items from './card-items.json';
-import sidebarTpl from './tamplates/sidebar.hbs';
-import cardItemsTpl from './tamplates/card-item.hbs';
-
-const renderSidebar = sidebarTpl(sidebar);
-refs.sidebar.insertAdjacentHTML('afterbegin', renderSidebar);
-
-const renderCardList = cardItemsTpl(items);
-refs.cardList.insertAdjacentHTML('beforeend', renderCardList);
+import './js/menu-toggler';

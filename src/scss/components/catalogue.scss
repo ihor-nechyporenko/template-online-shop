@@ -13,4 +13,8 @@
   letter-spacing: 0.025em;
 
   color: $text-color-primary;
+
+  &-current {
+    text-decoration: none;
+  }
 }

@@ -27,23 +27,38 @@
 
     <main>
       <section class="menu__section">
-        <div class="container menu__container">
+        <div class="container mobile-menu__container">
+          <button
+            type="button"
+            class="menu-toggle-btn"
+            aria-expanded="false"
+            aria-controls="menu__container"
+            data-menu-button
+          >
+            <svg width='30' height='30' aria-label="Переключатель мобильного меню">
+              <use class="icon-burger" href='./images/sprite.svg#icon-burger-menu'></use>
+              <use class="icon-cross" href='./images/sprite.svg#icon-cross-menu'></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="container menu__container" data-menu>
           <nav>
             <ul class="menu__list">
               <li>
                 <a href="/" class="menu__link">Главная</a>
               </li>
               <li>
-                <a href="#" class="menu__link">Каталог</a>
+                <a href="/" class="menu__link">Каталог</a>
               </li>
               <li>
-                <a href="#" class="menu__link">Доставка и оплата</a>
+                <a href="/" class="menu__link">Доставка и оплата</a>
               </li>
               <li>
-                <a href="#" class="menu__link">Прайс-лист</a>
+                <a href="/" class="menu__link">Прайс-лист</a>
               </li>
               <li>
-                <a href="#" class="menu__link">Контакты</a>
+                <a href="/" class="menu__link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -66,28 +81,30 @@
           <nav>
             <ul class="catalogue__list">
               <li>
-                <a href="#" class="catalogue__link">Главная /</a>
+                <a href="#" class="catalogue__link">Главная</a>
+                <span>/&nbsp</span>
               </li>
               <li>
-                <a href="#" class="catalogue__link">Каталог /</a>
+                <a href="#" class="catalogue__link">Каталог</a>
+                <span>/&nbsp</span>
               </li>
               <li>
-                <a href="#" class="catalogue__link">Бытовая техника</a>
+                <a href="#" class="catalogue__link catalogue__link-current">Бытовая техника</a>
               </li>
             </ul>
           </nav>
         </div>
       </section>
 
-      <div class="container container__flex">
+      <div class="container container__flex container__flex-column">
         <div class="sidebar-container">
           <aside class="sidebar">
-            <a href="#">
-              <div class="price-list-thumb">
+            <div class="price-list-thumb">
+              <a class="price-list-link" href="#">
                 <img src="images/excel.png" alt="Прайс-лист" width="97" />
                 <span class="price-list">Прайс-лист</span>
-              </div>
-            </a>
+              </a>
+            </div>
           </aside>
         </div>
 

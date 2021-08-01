@@ -93,6 +93,20 @@
     color: $text-color-modal;
   }
 
+  &-input.is-invalid {
+    border: 1px solid red;
+    box-shadow: inset 2px 2px 5px rgba(255, 0, 0, 0.4);
+  }
+
+  &-input::placeholder {
+    font-family: $font-primary;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: italic;
+    color: #dc7f7f;
+  }
+
   &-textarea {
     resize: none;
     height: 142px;
@@ -113,6 +127,12 @@
 
     border: none;
     cursor: pointer;
+    transform: scale(1);
+  }
+
+  &-button:hover,
+  &-button:focus {
+    transform: scale(1.1);
   }
 
   &-button-thumb {

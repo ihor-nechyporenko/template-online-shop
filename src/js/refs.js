@@ -9,4 +9,6 @@ export default {
   sliderRightBtn: document.querySelector('.right-btn'),
   menuBtn: document.querySelector('[data-menu-button]'),
   mobileMenu: document.querySelector('[data-menu]'),
+  formInputs: document.querySelectorAll('[data-form-input]'),
+  form: document.querySelector('.modal__content-form'),
 };

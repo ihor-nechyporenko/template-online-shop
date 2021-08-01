@@ -4,3 +4,4 @@ import './js/render-sidebar';
 import './js/modal';
 import './js/slider';
 import './js/menu-toggler';
+import './js/validation-check';

@@ -52,6 +52,19 @@
   font-weight: 700;
   letter-spacing: 0.025em;
   color: $text-color-third;
+
+  &-thumb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cart-icon {
+  margin-right: 36px;
+  color: #fff;
+  width: 28px;
+  height: 21px;
 }
 
 .pagination {

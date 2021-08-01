@@ -3,7 +3,10 @@
     <li class="card-container">
         <img class="card-image" src="{{image}}" alt="{{description}}" width="210" />
         <p class="card-desc">{{description}}</p>
-        <span class="price">{{price}}</span>
+        <div class="price-thumb">
+            <span class="price">{{price}}</span>
+            <i class="material-icons cart-icon"> shopping_cart </i>
+        </div>
     </li>
     {{/each}}
 </ul>
